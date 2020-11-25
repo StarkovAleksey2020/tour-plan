@@ -454,6 +454,9 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .user {
@@ -658,6 +661,9 @@ template {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .slider-button--next {
@@ -797,6 +803,9 @@ template {
   border: none;
   color: #fff;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .map {
@@ -859,6 +868,8 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .newsletter-title__strong {
@@ -892,13 +903,16 @@ template {
 
 .subscribe__button {
   position: absolute;
-  min-width: 65px;
+  width: 65px;
   right: 0;
   top: 0;
   height: 100%;
   border: none;
   background-color: #EC1F46;
   color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media (max-width: 1200px) {
@@ -955,6 +969,7 @@ template {
   }
   .hotel {
     padding-top: 17px;
+    padding-bottom: 60px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -983,6 +998,23 @@ template {
   }
   .map {
     width: 340px;
+  }
+  .newsletter {
+    padding-top: 92px;
+  }
+  .newsletter-title {
+    margin-top: -4px;
+  }
+  .newsletter-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .subscribe {
+    margin-top: 5px;
+  }
+  .subscribe__button {
+    font-size: 12px;
   }
 }
 
@@ -1117,16 +1149,19 @@ template {
     width: 6px;
     height: 6px;
   }
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel-info {
     padding-bottom: 37px;
-  }
-  .slider {
-    height: 179px;
-    border-radius: 8px;
   }
   .hotel-right {
     border-radius: 8px;
     min-height: 403px;
+  }
+  .slider {
+    height: 179px;
+    border-radius: 8px;
   }
   .booking {
     padding: 26px 23px;
@@ -1159,6 +1194,7 @@ template {
   }
   .newsletter-title {
     font-size: 20px;
+    margin-top: 0;
   }
   .newsletter-title__strong {
     font-style: normal;

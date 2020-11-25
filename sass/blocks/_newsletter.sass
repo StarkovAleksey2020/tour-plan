@@ -30,6 +30,8 @@
     font-weight: 300
     font-size: 24px
     line-height: 30px
+    margin-top: 0
+    margin-bottom: 0
     &__strong
       font-style: normal
       font-weight: 600
@@ -55,10 +57,13 @@
     line-height: 18px
   &__button
     position: absolute
-    min-width: 65px
+    width: 65px
     right: 0
     top: 0
     height: 100%
     border: none
     background-color: $primary
     color: $light
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
