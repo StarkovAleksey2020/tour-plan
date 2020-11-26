@@ -1081,7 +1081,7 @@ template {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 21px 0 98px 0;
 }
 
 .activities__title {
@@ -1146,6 +1146,7 @@ template {
 }
 
 .card__title {
+  max-width: 210px;
   margin-top: auto;
   margin-bottom: 18px;
   color: #fff;
@@ -1282,11 +1283,11 @@ template {
     font-size: 12px;
   }
   .reviews {
-    padding: 8px 0 70px 0;
+    padding: 8px 0 0 0;
   }
   .reviews__title {
     font-size: 30px;
-    margin-bottom: 45px;
+    margin-bottom: 37px;
   }
   .reviews-slider__item {
     max-width: 580px;
@@ -1307,6 +1308,9 @@ template {
   .reviews-slider__button--prev {
     left: 0;
   }
+  .activities {
+    padding: 78px 0 98px 0;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1316,7 +1320,7 @@ template {
   }
   .card {
     width: 340px;
-    height: 250px;
+    height: 255px;
   }
 }
 
@@ -1434,6 +1438,10 @@ template {
   .activities {
     padding-top: 40px;
     padding-bottom: 60px;
+  }
+  .activities__title {
+    font-size: 18px;
+    margin-bottom: 35px;
   }
   .card {
     width: 49%;
@@ -1558,13 +1566,13 @@ template {
     line-height: 15px;
   }
   .reviews {
-    padding: 5px 0 70px 0;
+    padding: 5px 0 0 0;
   }
   .reviews__title {
     font-size: 18px;
     max-width: 245px;
     line-height: 22px;
-    margin: 35px auto 49px;
+    margin: 35px auto 39px;
   }
   .reviews-slider__button {
     top: 25px;
@@ -1574,6 +1582,9 @@ template {
   }
   .reviews-slider__button--next {
     right: 42%;
+  }
+  .activities {
+    padding-top: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
