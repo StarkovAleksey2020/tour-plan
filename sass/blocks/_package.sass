@@ -1,5 +1,5 @@
 .package
-  height: 1207px
+  max-height: 1207px
   &-stars
     &__item
       height: 6px
@@ -24,6 +24,7 @@
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: 1fr 1fr 1fr
     gap: 30px
+    justify-items: center
   &-card
     height: 499px
     min-width: 350px
@@ -33,6 +34,12 @@
     position: relative
     &__rating
       grid-area: rating
+    &__image
+      min-height: 50%
+      border-radius: 4px 4px 0 0
+      &--wide
+        height: inherit
+        /*min-height: -webkit-fill-available*/
     &:first-child
       grid-column-start: span 2
       display: grid
@@ -40,7 +47,7 @@
       grid-template-rows: 1fr
     &__badge
       max-width: 95px
-      max-height: 30px
+      /*max-height: 30px*/
       padding: 8px 21px 8px 11px
       font-style: normal
       font-weight: 600
@@ -116,7 +123,7 @@
   justify-content: space-between
   align-items: flex-start
   &__price
-    &--old
+    &-old
       font-style: normal
       font-weight: normal
       font-size: 14px
@@ -126,7 +133,8 @@
       margin: 0
       grid-row: 1 / 2
       grid-column: 1 / 2
-    &--new
+  &__price
+    &-new
       font-style: normal
       font-weight: bold
       font-size: 24px
@@ -137,6 +145,7 @@
       grid-column: 1 / 1
       align-self: center
   &__button
+    max-width: 122px
     color: $light
     background-color: $primary
     border-radius: 4px
@@ -149,3 +158,6 @@
     grid-area: button
     grid-row: 2 / 2
     grid-column: 2 / 2
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap

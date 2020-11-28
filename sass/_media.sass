@@ -16,6 +16,13 @@
   .card
     width: 230px
     height: 230px
+  .package
+    &-grid
+      gap: 15px
+    &-card
+      min-width: 30%
+      &__description
+        padding: 25px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -101,6 +108,26 @@
   .card
     width: 340px
     height: 255px
+  .package
+    min-height: 1700px
+    &-card
+      &__badge
+        &--narrow
+          max-width: 95px
+          padding: 8px 21px 8px 11px
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 15px
+          color: #fff
+          background-color: #EC1F46
+          position: absolute
+          left: 0
+          top: 26px
+          border-radius: 0px 4px 4px 0px
+    &-grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: 1fr 1fr 1fr
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -183,6 +210,47 @@
   .card
     width: 49%
     height: 255px
+  .package
+    min-height: 1350px
+    &-card
+      max-height: 393px
+      &__badge
+        &--narrow
+          max-width: 95px
+          padding: 8px 21px 8px 11px
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 15px
+          color: #fff
+          background-color: #EC1F46
+          position: absolute
+          left: 0
+          top: 26px
+          border-radius: 0px 4px 4px 0px
+      &__description
+        padding: 10px
+        &--narrow
+          padding-top: 5px
+          padding-bottom: 5px
+      &__title
+        margin-bottom: 17px
+      &__text
+        margin-bottom: 17px
+        font-size: 12px
+      .conditions
+        margin: 0 auto 5px auto
+      &__image
+        &--wide
+          height: auto
+  .conditions
+    margin-bottom: 5px
+    &__block
+      margin-bottom: 3px
+  .booking
+    &-block
+      &__button
+        max-width: 122px
 @media (max-width: 576px)
   .navbar-top
     padding-top: 23px
@@ -202,6 +270,53 @@
     width: 100%
   .card
     width: 100%
+  .package
+    min-height: 2200px
+    &-grid
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(5, 1fr)
+      margin: 0 auto
+    &-card
+      max-width: 350px
+      min-width: 70%
+      &__badge
+        &--narrow
+          max-width: 95px
+          padding: 8px 21px 8px 11px
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 15px
+          color: #fff
+          background-color: #EC1F46
+          position: absolute
+          left: 0
+          top: 26px
+          border-radius: 0px 4px 4px 0px
+      &:first-child
+        display: grid
+        grid-column-start: 1
+        grid-template-columns: 1fr
+      &__image
+        max-height: 50%
+        min-width: 100%
+        &--wide
+          min-height: max-content
+      &__description
+        position: absolute
+        bottom: 0
+        right: 0
+        left: 0
+        padding: 0 15px 20px 15px
+      &__text
+        display: none
+    .conditions
+      margin: 0 auto 5px auto
+  .booking
+    &-block
+      max-height: 48px
+      &__button
+        max-width: 122px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -282,3 +397,21 @@
           right: 42%
   .activities
     padding-top: 15px
+  .package
+    min-height: 2120px
+    &-title
+      font-size: 24px
+      margin: 0 auto 20px auto
+    &-card
+      max-width: 280px
+      &__description
+        &--narrow
+          padding-bottom: 30px
+  .conditions
+    margin-bottom: 5px
+    &__block
+      margin-bottom: 3px
+  .booking
+    &-block
+      &__button
+        max-width: 122px
