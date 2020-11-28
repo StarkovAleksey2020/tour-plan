@@ -1815,7 +1815,7 @@ template {
   }
   .package-card {
     max-width: 350px;
-    min-width: 70%;
+    width: 90%;
   }
   .package-card__badge--narrow {
     max-width: 95px;
