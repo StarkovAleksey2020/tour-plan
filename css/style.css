@@ -924,6 +924,7 @@ template {
   left: 0;
   top: 26px;
   border-radius: 0px 4px 4px 0px;
+  z-index: 10;
 }
 
 .package-card__badge--narrow {
