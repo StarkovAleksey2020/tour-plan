@@ -1213,7 +1213,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   max-width: 730px;
-  margin: 45px auto 0;
+  margin: 45px auto -4px;
   background-color: #fff;
   border-radius: 8px;
   padding: 0 62px 30px;
@@ -1280,7 +1280,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .reviews-slider__avatar {
@@ -1345,7 +1345,7 @@ template {
 }
 
 .activities {
-  padding: 21px 0 98px 0;
+  padding: 24px 0 98px 0;
 }
 
 .activities__title {
@@ -1436,7 +1436,7 @@ template {
 .footer {
   background-color: #0A223D;
   color: #fff;
-  padding-top: 108px;
+  padding-top: 105px;
   padding-bottom: 46px;
 }
 
@@ -1447,21 +1447,22 @@ template {
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-gap: 20px;
-  grid-auto-rows: minmax(40px, -webkit-min-content);
-  grid-auto-rows: minmax(40px, min-content);
+  grid-auto-rows: minmax(39px, -webkit-min-content);
+  grid-auto-rows: minmax(39px, min-content);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
 }
 
 .footer__logo {
-  width: 166px;
+  width: 155px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  margin-top: 10px;
 }
 
 .footer__categories {
@@ -1498,8 +1499,13 @@ template {
   grid-column: 3 / 5;
 }
 
+.footer__legal {
+  margin: 2px 0 0 64px;
+}
+
 .footer__contact-details {
   grid-column: span 2;
+  padding-top: 11px;
 }
 
 .footer__contact-form {
@@ -1518,11 +1524,12 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 10px 1px 0 5px;
 }
 
 .footer__ul {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 4px;
   list-style: none;
 }
 
@@ -1540,7 +1547,28 @@ template {
 }
 
 .footer__title--mb-3 {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  margin-left: 4px;
+}
+
+.footer__title--delta {
+  margin-left: -4px;
+}
+
+.footer__title-additional {
+  margin: 0 10px 19px 5px;
+}
+
+.footer__title-categories {
+  margin: 0 0 20px 0;
+}
+
+.footer__title-legal {
+  margin: 0 0 15px 4px;
+}
+
+.footer__title-network {
+  margin: 0 45px 0 4px;
 }
 
 .footer__item {
@@ -1559,19 +1587,37 @@ template {
 
 .footer__item--mb-2 {
   margin-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.footer__item--mb-2:nth-child(2n) {
+  margin-top: -7px;
 }
 
 .footer__item-horizontal {
   margin-right: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__icon-wrapper {
   min-width: 40px;
+  padding-top: 5px;
 }
 
 .footer__text {
   color: #BDBDBD;
   margin-bottom: 22px;
+  margin-left: -6px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
 }
 
 .footer__link {
@@ -1586,8 +1632,8 @@ template {
   padding: 0 23px;
   height: 50px;
   margin-bottom: 15px;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 
 .footer__message {
@@ -1636,6 +1682,7 @@ template {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-column: 2 / 5;
+  margin: 75px 0 0 50px;
 }
 
 .footer__politics-text {
@@ -2430,6 +2477,8 @@ template {
     grid-row: 8;
     -ms-grid-column: 1;
     grid-column: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer__politics-text {
     min-width: 100%;
@@ -2439,14 +2488,19 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .footer__politics-icons {
+    height: 22px;
+  }
   .footer__item-horizontal {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
+    color: #FFFFFF;
+    margin: 0;
   }
   .footer__item-horizontal:nth-child(2n) {
-    margin: 0 10px 0 10px;
+    margin: 0 10px 10px 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
