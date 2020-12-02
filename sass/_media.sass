@@ -172,6 +172,9 @@
         min-width: 35px
     &__additional
       grid-column: span 2
+    &__title
+      &--mb-4
+        margin-bottom: 25px
     &__contact
       &-details
         grid-row: 3
@@ -315,8 +318,11 @@
       &__button
         max-width: 122px
   .footer
+    &__social
+      &-network
+        grid-column: span 5
     &__input
-      flex-basis: 48%
+      flex-basis: 46%
       padding: 18px 0 18px 23px
       font-style: normal
       font-weight: normal
@@ -431,6 +437,8 @@
       grid-row: 5
       grid-column: 1
       margin: 0
+    &__input
+      flex-basis: 100%
     &__contact
       &-details
         grid-row: 6
@@ -438,9 +446,11 @@
       &-form
         grid-row: 7
         grid-column: 1
+        min-height: 370px
     &__politics
       grid-row: 8
       grid-column: 1
+      flex-wrap: wrap
 @media (max-width: 320px)
   .container
     max-width: 280px

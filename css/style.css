@@ -1552,6 +1552,10 @@ template {
   margin-left: 4px;
 }
 
+.footer__title--mb-4 {
+  margin-bottom: 25px;
+}
+
 .footer__title--delta {
   margin-left: -4px;
 }
@@ -1945,6 +1949,9 @@ template {
   .footer__additional {
     grid-column: span 2;
   }
+  .footer__title--mb-4 {
+    margin-bottom: 25px;
+  }
   .footer__contact-details {
     -ms-grid-row: 3;
     grid-row: 3;
@@ -2145,9 +2152,12 @@ template {
   .booking-block__button {
     max-width: 122px;
   }
+  .footer__social-network {
+    grid-column: span 5;
+  }
   .footer__input {
-    -ms-flex-preferred-size: 48%;
-        flex-basis: 48%;
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%;
     padding: 18px 0 18px 23px;
     font-style: normal;
     font-weight: normal;
@@ -2308,6 +2318,10 @@ template {
     grid-column: 1;
     margin: 0;
   }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .footer__contact-details {
     -ms-grid-row: 6;
     grid-row: 6;
@@ -2319,12 +2333,15 @@ template {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
+    min-height: 370px;
   }
   .footer__politics {
     -ms-grid-row: 8;
     grid-row: 8;
     -ms-grid-column: 1;
     grid-column: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
