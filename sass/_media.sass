@@ -103,7 +103,7 @@
         &--prev
           left: 0
   .activities
-    padding: 78px 0 98px 0
+    padding: 78px 0 51px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -132,33 +132,50 @@
       grid-template-columns: repeat(2, 1fr)
       grid-template-rows: 1fr 1fr 1fr
   .footer
+    padding-top: 62px
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
-      grid-row-gap: 40px
+      grid-template-columns: minmax(min-content, 192px) minmax(min-content, 50px) minmax(min-content, 286px) 1fr
+      grid-row-gap: 50px
+      grid-column-gap: 5px
+      /*grid-template-columns: repeat(6, 1fr)*/
+      /*grid-row-gap: 50px*/
     &__input
-      flex-basis: 49%
+      flex-basis: 47%
+      padding: 0 18px
     &__logo
-      grid-row: 1 / 2
-      grid-column: span 2
+      width: 94px
+      grid-row: 1
+      grid-column: 1
     &__social
       &-network
-        grid-row: 1 / 2
-        grid-column: span 4
+        grid-row: 1
+        grid-column: span 3
         align-self: center
+        justify-content: flex-start
+        margin-top: 25px
+        margin-left: -14px
     &__categories
       grid-row: 2 / 3
-      grid-column: span 2
+      grid-column: 1
     &__legal
-      grid-column: span 2
+      grid-column: 4
+      margin: 2px 0 0 -48px
+    &__icon
+      &-wrapper
+        min-width: 35px
     &__additional
       grid-column: span 2
     &__contact
       &-details
         grid-row: 3
-        grid-column: span 5
+        grid-column: span 3
+        padding-top: 8px
+        margin-left: 5px
       &-form
         grid-row: 4
-        grid-column: span 5
+        grid-column: span 3
+        margin-top: -15px
+        margin-left: -4px
     &__politics
       grid-row: 5
       grid-column: span 5
@@ -289,13 +306,31 @@
         max-width: 122px
   .footer
     &__input
-      flex-basis: 100%
+      flex-basis: 48%
+      padding: 18px 0 18px 23px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &__message
+      max-height: 123px
+      padding: 18px 0 18px 23px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &__contact
+      &-form
+        max-height: 317px
+        margin-bottom: 20px
     &__politics
       grid-column: span 6
       font-style: normal
       font-weight: normal
       font-size: 12px
       line-height: 15px
+    &__legal
+      margin: 2px 0 0 32px
 @media (max-width: 576px)
   .navbar-top
     padding-top: 23px
@@ -365,6 +400,7 @@
   .footer
     &-wrapper
       grid-template-columns: 1fr
+      grid-row-gap: 10px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -381,6 +417,7 @@
     &__legal
       grid-row: 5
       grid-column: 1
+      margin: 0
     &__contact
       &-details
         grid-row: 6
