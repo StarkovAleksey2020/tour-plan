@@ -2268,6 +2268,9 @@ template {
   .booking-block__button {
     max-width: 122px;
   }
+  .activities {
+    padding-bottom: 41px;
+  }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -2284,6 +2287,7 @@ template {
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin: 0;
   }
   .footer__additional {
     -ms-grid-row: 3;
@@ -2458,14 +2462,17 @@ template {
   .footer-wrapper {
     -ms-grid-columns: 281px;
         grid-template-columns: 281px;
+    -ms-grid-rows: auto 67px auto;
+        grid-template-rows: auto 67px auto;
     grid-column-gap: 0;
-    grid-row-gap: 30px;
+    grid-row-gap: 35px;
   }
   .footer__logo {
     -ms-grid-row: 1;
     grid-row: 1;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-top: 4px;
   }
   .footer__social-network {
     -ms-grid-row: 2;
@@ -2474,42 +2481,73 @@ template {
     grid-column: 1;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    min-height: 67px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .footer__title-network {
+    margin: 10px 45px 20px 0;
+  }
+  .footer__title-additional {
+    margin: 0 10px 14px 5px;
+  }
+  .footer__title--mb-3 {
+    margin-bottom: 23px;
+  }
+  .footer__title--mb-4 {
+    margin-bottom: 7px;
   }
   .footer__additional {
     -ms-grid-row: 4;
     grid-row: 4;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin: -5px 0 3px -5px;
   }
   .footer__categories {
     -ms-grid-row: 5;
     grid-row: 5;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin: -10px 0 0 -2px;
+  }
+  .footer__ul-narrow {
+    margin: 0;
+  }
+  .footer__icon-wrapper {
+    min-width: 24px;
   }
   .footer__legal {
     -ms-grid-row: 3;
     grid-row: 3;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin: -1px 0 0 -5px;
   }
   .footer__contact-details {
     -ms-grid-row: 6;
     grid-row: 6;
     -ms-grid-column: 1;
     grid-column: 1;
+    padding: 1px 0;
   }
   .footer__contact-form {
+    max-height: 386px;
     -ms-grid-row: 7;
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-bottom: 10px;
+    padding: 14px 0 0 0;
   }
   .footer__input {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .footer__message {
     font-style: normal;
@@ -2559,6 +2597,9 @@ template {
   }
   .footer__item-horizontal:nth-child(2n) {
     margin: 0 10px 10px 10px;
+  }
+  .footer__item--mb-2:first-child {
+    margin-bottom: 26px;
   }
 }
 /*# sourceMappingURL=style.css.map */
