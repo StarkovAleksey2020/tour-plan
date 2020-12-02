@@ -137,11 +137,18 @@
       grid-template-columns: minmax(min-content, 192px) minmax(min-content, 50px) minmax(min-content, 286px) 1fr
       grid-row-gap: 50px
       grid-column-gap: 5px
-      /*grid-template-columns: repeat(6, 1fr)*/
-      /*grid-row-gap: 50px*/
     &__input
       flex-basis: 47%
-      padding: 0 18px
+      padding: 3px 24px 0 24px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &__message
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
     &__logo
       width: 94px
       grid-row: 1
@@ -176,9 +183,12 @@
         grid-column: span 3
         margin-top: -15px
         margin-left: -4px
+    &__form
+      margin-bottom: 7px
     &__politics
       grid-row: 5
       grid-column: span 5
+      margin: 0
       &-text
         margin: 0
 @media (max-width: 768px)
