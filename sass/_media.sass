@@ -490,9 +490,24 @@
       grid-row: 8
       grid-column: 1
       flex-wrap: wrap
+@media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (orientation: landscape)
+  .navbar
+    &-bottom
+      &--visible
+        overflow: scroll
 @media (max-width: 320px)
   .container
     max-width: 280px
+  .navbar
+    &-bottom
+      top: 70px
+      &--visible
+        overflow: hidden
+    &-menu
+      &__item
+        &--mobile
+          &--visible
+            max-width: 90%
   .breadcrumb
     &-list
       padding: 18px 0 6px 0

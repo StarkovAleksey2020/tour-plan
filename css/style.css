@@ -2410,9 +2410,24 @@ template {
   }
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (orientation: landscape) {
+  .navbar-bottom--visible {
+    overflow: scroll;
+  }
+}
+
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
+  }
+  .navbar-bottom {
+    top: 70px;
+  }
+  .navbar-bottom--visible {
+    overflow: hidden;
+  }
+  .navbar-menu__item--mobile--visible {
+    max-width: 90%;
   }
   .breadcrumb-list {
     padding: 18px 0 6px 0;
