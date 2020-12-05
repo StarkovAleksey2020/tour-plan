@@ -194,6 +194,9 @@
       margin: 0
       &-text
         margin: 0
+  .modal
+    &__dialog
+      padding: 30px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -386,6 +389,11 @@
       line-height: 15px
     &__legal
       margin: 2px 0 0 32px
+  .modal
+    &__dialog
+      padding: 30px
+      min-width: 70%
+      max-width: 80%
 @media (max-width: 576px)
   .navbar-top
     padding-top: 23px
@@ -490,11 +498,40 @@
       grid-row: 8
       grid-column: 1
       flex-wrap: wrap
+  .modal
+    &__dialog
+      padding: 20px
+      min-width: 90%
+    &__title
+      &--mb-4
+        font-size: 16px
+        line-height: 20px
+        margin: 0 0 10px 0
+    &__close
+      top: 10px
+      right: 11px
+      &--image
+        max-width: 14px
+    &__input, &__message
+      padding: 13px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
 @media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (orientation: landscape)
   .navbar
     &-bottom
       &--visible
         overflow: scroll
+  .modal
+    overflow-y: initial !important
+    &__dialog
+      height: 95vh
+      overflow-y: auto
+    &__button
+      font-size: 18px
+      line-height: 20px
+      margin-bottom: 20px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -699,3 +736,11 @@
       &--mb-2
         &:first-child
           margin-bottom: 26px
+  .modal
+    &__message
+      margin-bottom: 15px
+    &__button
+      order: 5
+    &__info
+      order: 4
+      margin-bottom: 15px

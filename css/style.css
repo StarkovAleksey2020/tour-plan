@@ -55,6 +55,20 @@ img {
   cursor: pointer;
 }
 
+.button__home {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button__home--image {
+  margin-right: 8px;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1725,8 +1739,8 @@ template {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: opacity 2s;
-          transform: opacity 2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .modal__overlay--visible {
@@ -1749,8 +1763,8 @@ template {
   z-index: 101;
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: opacity 2s;
-          transform: opacity 2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .modal__dialog--visible {
@@ -2081,6 +2095,9 @@ template {
   .footer__politics-text {
     margin: 0;
   }
+  .modal__dialog {
+    padding: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2342,6 +2359,11 @@ template {
   .footer__legal {
     margin: 2px 0 0 32px;
   }
+  .modal__dialog {
+    padding: 30px;
+    min-width: 70%;
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2499,11 +2521,46 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .modal__dialog {
+    padding: 20px;
+    min-width: 90%;
+  }
+  .modal__title--mb-4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+  }
+  .modal__close {
+    top: 10px;
+    right: 11px;
+  }
+  .modal__close--image {
+    max-width: 14px;
+  }
+  .modal__input, .modal__message {
+    padding: 13px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (orientation: landscape) {
   .navbar-bottom--visible {
     overflow: scroll;
+  }
+  .modal {
+    overflow-y: initial !important;
+  }
+  .modal__dialog {
+    height: 95vh;
+    overflow-y: auto;
+  }
+  .modal__button {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -2788,6 +2845,20 @@ template {
   }
   .footer__item--mb-2:first-child {
     margin-bottom: 26px;
+  }
+  .modal__message {
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .modal__info {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
