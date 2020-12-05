@@ -65,7 +65,7 @@ img {
           justify-content: center;
 }
 
-.button__home--image {
+.button__home-image {
   margin-right: 8px;
 }
 
@@ -2534,7 +2534,7 @@ template {
     top: 10px;
     right: 11px;
   }
-  .modal__close--image {
+  .modal__close-image {
     max-width: 14px;
   }
   .modal__input, .modal__message {
