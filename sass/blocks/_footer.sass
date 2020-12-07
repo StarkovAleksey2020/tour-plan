@@ -53,6 +53,7 @@
       margin-left: 4px
     &--mb-4
       margin-bottom: 25px
+      margin-left: 5px
     &--delta
       margin-left: -4px
     &-additional
@@ -80,11 +81,18 @@
       &:nth-child(2n)
         margin-top: -7px
     &-horizontal
-      margin-right: 15px
+      min-height: 15px
+      /*margin-right: 14px*/
       font-style: normal
       font-weight: normal
       font-size: 12px
       line-height: 15px
+      &:first-child
+        flex-basis: 23%
+      &:nth-child(2)
+        flex-basis: 36%
+      &:last-child
+        flex-basis: 34%
   &__icon
     &-wrapper
       min-width: 40px
@@ -108,6 +116,7 @@
     max-height: 123px
     margin-bottom: 23px
   &__info
+    max-width: 50%
     font-style: normal
     font-weight: bold
     font-size: 12px
@@ -118,7 +127,11 @@
     justify-content: space-between
     align-items: center
     grid-column: 2 / 5
-    margin: 0 0 0 50px
+    /*margin: 0 0 0 50px*/
     &-text
       display: flex
-      margin-left: 80px
+      flex-basis: 37%
+      margin-left: 130px
+    &-icons
+      display: flex
+      flex-basis: 16%
