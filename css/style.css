@@ -85,6 +85,11 @@ img {
   margin-bottom: 75px;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1728,6 +1733,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
@@ -1840,13 +1849,17 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   max-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1901,7 +1914,7 @@ template {
   .package-card__description {
     padding: 25px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1937,7 +1950,7 @@ template {
   .navbar-menu {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding-top: 19px;
+    padding-top: 22px;
     padding-bottom: 23px;
   }
   .stars-item {
@@ -1994,7 +2007,7 @@ template {
     font-size: 12px;
   }
   .reviews {
-    padding: 8px 0 0 0;
+    padding: 8px 0 3px 0;
   }
   .reviews__title {
     font-size: 30px;
@@ -2066,10 +2079,10 @@ template {
     grid-row-gap: 50px;
     grid-column-gap: 5px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
-    padding: 3px 24px 0 24px;
+    /*padding: 3px 24px 0 24px*/
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -2147,6 +2160,12 @@ template {
   }
   .footer__politics-text {
     margin: 0;
+    -ms-flex-preferred-size: 44%;
+        flex-basis: 44%;
+  }
+  .footer__politics-icons {
+    -ms-flex-preferred-size: 19%;
+        flex-basis: 19%;
   }
   .modal__dialog {
     padding: 30px;
@@ -2382,10 +2401,10 @@ template {
   .footer__social-network {
     grid-column: span 5;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 46%;
-        flex-basis: 46%;
-    padding: 18px 0 18px 23px;
+  .footer__input-group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    /*padding: 18px 0 18px 23px*/
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -2632,7 +2651,7 @@ template {
     max-width: 90%;
   }
   .breadcrumb-list {
-    padding: 18px 0 6px 0;
+    padding: 10px 0 6px 0;
   }
   .stars {
     padding: 0 16px 3px 0;
@@ -2702,6 +2721,9 @@ template {
     width: 280px;
     height: 55px;
   }
+  .subscribe {
+    margin-top: 0px;
+  }
   .subscribe__input {
     padding-left: 20px;
     font-style: normal;
@@ -2735,6 +2757,34 @@ template {
   }
   .activities {
     padding-top: 15px;
+    padding-bottom: 36px;
+  }
+  .activities__title {
+    margin-bottom: 34px;
+    margin-top: 18px;
+  }
+  .activities__card {
+    margin-bottom: 23px;
+  }
+  .activities__card:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .activities__card:nth-child(2) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .activities__card:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .activities__card:nth-child(4) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
   .package {
     min-height: 2120px;
@@ -2886,6 +2936,10 @@ template {
   .footer__politics-icons {
     height: 22px;
   }
+  .footer__politics-icons {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
   .footer__item-horizontal {
     font-style: normal;
     font-weight: normal;
@@ -2895,7 +2949,11 @@ template {
     margin: 0;
   }
   .footer__item-horizontal:nth-child(2n) {
-    margin: 0 10px 10px 10px;
+    margin: 0 5px 10px 0px;
+  }
+  .footer__item-horizontal:last-child {
+    -ms-flex-preferred-size: 38%;
+        flex-basis: 38%;
   }
   .footer__item--mb-2:first-child {
     margin-bottom: 26px;

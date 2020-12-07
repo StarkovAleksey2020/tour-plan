@@ -72,4 +72,33 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  // Обработка форм
+  $('.form').each(function () {
+    $(this).validate({
+      rules: {
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Minimum field length 2 characters",
+        },
+        phone: {
+          required: "Required field",
+        },
+        email: {
+          required: "Required field",
+          email: "Your email address must be in the format name@domain.com",
+        },
+      },
+    });
+  });
+
+  // Маска номера телефона
+  $(".phoneInput").mask("+7 (999) 999-99-99");
 });
