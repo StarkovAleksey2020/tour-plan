@@ -39,7 +39,7 @@ img {
 
 .button {
   width: 160px;
-  min-height: 50px;
+  min-height: 45px;
   padding: 18px;
   font-style: normal;
   font-weight: bold;
@@ -476,6 +476,8 @@ template {
 }
 
 .navbar-menu__link {
+  max-width: 160px;
+  display: block;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
@@ -549,6 +551,7 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+  max-width: 300px;
 }
 
 .breadcrumb-list {
@@ -613,6 +616,7 @@ template {
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
+  max-width: 280px;
 }
 
 .hotel-wrapper {
@@ -716,6 +720,7 @@ template {
 }
 
 .offer {
+  max-width: 91px;
   font-size: 10px;
   line-height: 13px;
   padding: 4px 10px;
@@ -796,6 +801,7 @@ template {
 
 .booking__room {
   margin-top: 4px;
+  max-width: 160px;
 }
 
 .booking__text {
@@ -859,11 +865,21 @@ template {
 
 .booking__num {
   margin-left: 8px;
+  max-width: 120px;
 }
 
 .booking__button {
   width: 100%;
-  min-height: 45px;
+  max-height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -889,7 +905,7 @@ template {
 }
 
 .package {
-  max-height: 1207px;
+  padding-bottom: 70px;
 }
 
 .package-stars__item {
@@ -921,14 +937,14 @@ template {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   gap: 30px;
   justify-items: center;
 }
 
 .package-card {
-  height: 499px;
+  min-height: 500px;
   min-width: 350px;
   border-radius: 8px;
   background-color: #0A223D;
@@ -948,13 +964,13 @@ template {
 }
 
 .package-card__image {
-  min-height: 50%;
+  max-height: 50%;
   border-radius: 4px 4px 0 0;
 }
 
 .package-card__image--wide {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
@@ -1004,7 +1020,7 @@ template {
 }
 
 .package-card__description {
-  padding: 39px 21px 40px 44px;
+  padding: 41px 21px 28px 44px;
   color: #fff;
 }
 
@@ -1044,8 +1060,9 @@ template {
           justify-content: flex-start;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
   color: #fff;
   margin-bottom: 23px;
   grid-area: conditions;
@@ -1081,13 +1098,14 @@ template {
 
 .booking-block {
   max-width: 100%;
-  max-height: 58px;
+  min-height: 58px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr;
       grid-template-columns: 2fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: min-content min-content;
+      grid-template-rows: -webkit-min-content -webkit-min-content;
+      grid-template-rows: min-content min-content;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1119,14 +1137,12 @@ template {
   font-size: 24px;
   line-height: 30px;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin-top: 7px;
   -ms-grid-row: 2;
   grid-row: 2 / 2;
   -ms-grid-column: 1;
   grid-column: 1 / 1;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  /*align-self: center*/
 }
 
 .booking-block__button {
@@ -1148,7 +1164,7 @@ template {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-bottom: 30%;
+  /*margin-bottom: 30%*/
 }
 
 .newsletter {
@@ -1412,7 +1428,7 @@ template {
 }
 
 .activities {
-  padding: 24px 0 98px 0;
+  padding: 24px 0 96px 0;
 }
 
 .activities__title {
@@ -1480,11 +1496,16 @@ template {
   max-width: 210px;
   margin-top: auto;
   margin-bottom: 18px;
+  padding-right: 43px;
   color: #fff;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+}
+
+.card__title--wide {
+  padding-right: 0;
 }
 
 .card__button {
@@ -2140,6 +2161,7 @@ template {
     right: 0;
     bottom: 0;
     padding-top: 30px;
+    overflow: auto;
   }
   .navbar-bottom--visible {
     display: block;
