@@ -2596,7 +2596,8 @@ template {
   }
   .modal__dialog {
     padding: 20px;
-    min-width: 90%;
+    min-width: 80%;
+    max-width: 90%;
   }
   .modal__title--mb-4 {
     font-size: 16px;
