@@ -75,7 +75,7 @@
   .map
     width: 340px
   .newsletter
-    padding-top: 92px
+    padding-top: 97px
     &-title
       margin-top: -4px
     &-wrapper
@@ -85,7 +85,7 @@
     &__button
       font-size: 12px
   .reviews
-    padding: 8px 0 3px 0
+    padding: 0 0 3px 0
     &__title
       font-size: 30px
       margin-bottom: 37px
@@ -114,6 +114,7 @@
     height: 255px
   .package
     min-height: 1700px
+    padding-bottom: 73px
     &-card
       &__badge
         &--narrow
@@ -505,6 +506,9 @@
       grid-row: 8
       grid-column: 1
       flex-wrap: wrap
+      &-text
+        flex-basis: 80%
+        text-align: center
   .modal
     &__dialog
       padding: 20px
@@ -557,10 +561,11 @@
     &-list
       padding: 10px 0 6px 0
   .stars
-    padding: 0 16px 3px 0
+    padding: 0 15px 3px 0
     &-item
-      width: 6px
-      height: 6px
+      width: 9px
+      height: 9px
+      margin-right: -2px
   .hotel
     padding-bottom: 40px
     &-info
@@ -624,13 +629,23 @@
       margin: 35px auto 39px
     &-slider
       &__button
-        top: 25px
+        top: 35px
         &--prev
           left: 40%
         &--next
           right: 42%
+      &__rating
+        min-width: 46px
+      &__profile
+        margin-bottom: 30px
+      &__text
+        max-width: 217px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 160%
   .activities
-    padding-top: 15px
+    padding-top: 17px
     padding-bottom: 36px
     &__title
       margin-bottom: 34px

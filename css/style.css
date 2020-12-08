@@ -1539,6 +1539,7 @@ template {
   color: #fff;
   padding-top: 105px;
   padding-bottom: 46px;
+  overflow-x: hidden;
 }
 
 .footer-wrapper {
@@ -1734,12 +1735,16 @@ template {
 
 .footer__input {
   width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__input-group {
   margin-bottom: 15px;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
 }
 
 .footer__message {
@@ -1747,6 +1752,10 @@ template {
       flex-basis: 100%;
   max-height: 123px;
   margin-bottom: 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__info {
@@ -1990,7 +1999,7 @@ template {
     width: 340px;
   }
   .newsletter {
-    padding-top: 92px;
+    padding-top: 97px;
   }
   .newsletter-title {
     margin-top: -4px;
@@ -2007,7 +2016,7 @@ template {
     font-size: 12px;
   }
   .reviews {
-    padding: 8px 0 3px 0;
+    padding: 0 0 3px 0;
   }
   .reviews__title {
     font-size: 30px;
@@ -2048,6 +2057,7 @@ template {
   }
   .package {
     min-height: 1700px;
+    padding-bottom: 73px;
   }
   .package-card__badge--narrow {
     max-width: 95px;
@@ -2594,6 +2604,11 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .footer__politics-text {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    text-align: center;
+  }
   .modal__dialog {
     padding: 20px;
     min-width: 80%;
@@ -2655,11 +2670,12 @@ template {
     padding: 10px 0 6px 0;
   }
   .stars {
-    padding: 0 16px 3px 0;
+    padding: 0 15px 3px 0;
   }
   .stars-item {
-    width: 6px;
-    height: 6px;
+    width: 9px;
+    height: 9px;
+    margin-right: -2px;
   }
   .hotel {
     padding-bottom: 40px;
@@ -2748,7 +2764,7 @@ template {
     margin: 35px auto 39px;
   }
   .reviews-slider__button {
-    top: 25px;
+    top: 35px;
   }
   .reviews-slider__button--prev {
     left: 40%;
@@ -2756,8 +2772,21 @@ template {
   .reviews-slider__button--next {
     right: 42%;
   }
+  .reviews-slider__rating {
+    min-width: 46px;
+  }
+  .reviews-slider__profile {
+    margin-bottom: 30px;
+  }
+  .reviews-slider__text {
+    max-width: 217px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+  }
   .activities {
-    padding-top: 15px;
+    padding-top: 17px;
     padding-bottom: 36px;
   }
   .activities__title {
