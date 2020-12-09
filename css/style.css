@@ -2429,6 +2429,14 @@ template {
   .booking-block__button {
     max-width: 122px;
   }
+  .footer__container {
+    max-width: 698px;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: minmax(min-content, 192px) minmax(min-content, 50px) minmax(min-content, 230px) 1fr;
+        grid-template-columns: minmax(-webkit-min-content, 192px) minmax(-webkit-min-content, 50px) minmax(-webkit-min-content, 230px) 1fr;
+        grid-template-columns: minmax(min-content, 192px) minmax(min-content, 50px) minmax(min-content, 230px) 1fr;
+  }
   .footer__social-network {
     grid-column: span 5;
   }
@@ -2461,7 +2469,8 @@ template {
     line-height: 15px;
   }
   .footer__legal {
-    margin: 2px 0 0 32px;
+    /*margin: 2px 0 0 32px*/
+    margin: 2px 0 0 0;
   }
   .modal__dialog {
     padding: 30px;

@@ -367,6 +367,10 @@
       &__button
         max-width: 122px
   .footer
+    &__container
+      max-width: 698px
+    &-wrapper
+      grid-template-columns: minmax(min-content, 192px) minmax(min-content, 50px) minmax(min-content, 230px) 1fr
     &__social
       &-network
         grid-column: span 5
@@ -396,7 +400,8 @@
       font-size: 12px
       line-height: 15px
     &__legal
-      margin: 2px 0 0 32px
+      /*margin: 2px 0 0 32px*/
+      margin: 2px 0 0 0
   .modal
     &__dialog
       padding: 30px
