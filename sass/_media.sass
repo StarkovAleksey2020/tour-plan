@@ -154,6 +154,7 @@
       line-height: 15px
     &__logo
       width: 94px
+      margin-top: 10px
       grid-row: 1
       grid-column: 1
     &__social
@@ -368,12 +369,15 @@
         max-width: 122px
   .footer
     &__container
-      max-width: 698px
+      max-width: 700px
     &-wrapper
-      grid-template-columns: minmax(min-content, 192px) minmax(min-content, 50px) minmax(min-content, 230px) 1fr
+      grid-template-columns: minmax(min-content, 177px) minmax(min-content, 50px) minmax(min-content, 225px) 1fr
     &__social
       &-network
         grid-column: span 5
+    &__title
+      &-additional
+        margin: 0
     &__input
       &-group
         flex-basis: 100%
@@ -399,6 +403,8 @@
       font-weight: normal
       font-size: 12px
       line-height: 15px
+      &-text
+        flex-basis: 48%
     &__legal
       /*margin: 2px 0 0 32px*/
       margin: 2px 0 0 0
