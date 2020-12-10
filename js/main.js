@@ -2,13 +2,17 @@ $(document).ready(function () {
     var hotelSlider = new Swiper('.hotel-slider', {
     // Optional parameters
     loop: true,
-
     // Navigation arrows
     navigation: {
       nextEl: '.hotel-slider__button--next',
       prevEl: '.hotel-slider__button--prev',
     },
     effect: "cube",
+    cubeEffect: {
+      slideShadows: false,
+      shadow: false,
+    },
+
     keyboard: {
       enabled: true,
       onlyInViewport: false,

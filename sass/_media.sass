@@ -21,6 +21,9 @@
       gap: 15px
     &-card
       min-width: 30%
+      max-height: 467px
+      &__text
+        margin-bottom: 9px
       &__description
         padding: 25px
   .footer
@@ -31,6 +34,9 @@
   .container,
   .newsletter-wrapper
     max-width: 700px
+  .button
+    &:hover
+      background-color: $primary
   .logo
     width: 132px
   .navbar
@@ -45,14 +51,29 @@
       &__link
         font-size: 12px
         line-height: 15px
+  .user
+    &__name
+      &:hover
+        text-decoration: none
   .search
     &__input
       width: 340px
       margin-left: -25px
+    &__button
+      &:hover
+        background-color: $primary
   .navbar-menu
     justify-content: space-around
     padding-top: 22px
     padding-bottom: 23px
+    &__link
+      &:hover
+        font-weight: 400
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          text-decoration: none
   .stars-item
     width: 7px
     height: 7px
@@ -70,10 +91,15 @@
   .booking
     width: 340px
     padding: 30px 24px
+    &-block
+      &__button
+        &:hover
+          background-color: $primary
     &__room
       margin-top: 6px
   .map
-    width: 340px
+    &-frame
+      width: 340px
   .newsletter
     padding-top: 97px
     &-title
@@ -84,6 +110,8 @@
     margin-top: 5px
     &__button
       font-size: 12px
+      &:hover
+        background-color: $primary
   .reviews
     padding: 0 0 3px 0
     &__title
@@ -104,7 +132,7 @@
         &--prev
           left: 0
   .activities
-    padding: 78px 0 51px 0
+    padding: 98px 0 52px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -112,6 +140,9 @@
   .card
     width: 340px
     height: 255px
+    &__button
+      &:hover
+        background-color: $primary
   .package
     min-height: 1700px
     padding-bottom: 73px
@@ -130,6 +161,8 @@
           left: 0
           top: 26px
           border-radius: 0px 4px 4px 0px
+      &__description
+        padding: 15px
     &-grid
       grid-template-columns: repeat(2, 1fr)
       grid-template-rows: 1fr 1fr 1fr
@@ -157,6 +190,10 @@
       margin-top: 10px
       grid-row: 1
       grid-column: 1
+    &__link
+      &:hover
+        text-decoration: none
+        color: inherit
     &__social
       &-network
         grid-row: 1
@@ -188,7 +225,7 @@
       &-form
         grid-row: 4
         grid-column: span 3
-        margin-top: -15px
+        margin-top: -13px
         margin-left: -4px
     &__form
       margin-bottom: 7px
@@ -201,10 +238,19 @@
         flex-basis: 44%
       &-icons
         flex-basis: 19%
+    &__item
+      &-horizontal
+        &:hover
+          text-decoration: none
+          color: $footer-text-color
+      &-link
+        &:hover
+          text-decoration: none
+          color: $footer-text-color
   .modal
     &__dialog
       padding: 30px
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -294,7 +340,8 @@
   .booking
     width: 100%
   .map
-    width: 100%
+    &-frame
+      width: 100%
   .newsletter
     &-wrapper
       max-width: 576px
@@ -329,7 +376,8 @@
   .package
     min-height: 1350px
     &-card
-      max-height: 393px
+      max-height: 401px
+      /*min-height: 401px*/
       &__badge
         &--narrow
           max-width: 95px
@@ -345,9 +393,9 @@
           top: 26px
           border-radius: 0px 4px 4px 0px
       &__description
-        padding: 10px
+        padding: 20px 10px 10px 10px
         &--narrow
-          padding-top: 5px
+          padding-top: 15px
           padding-bottom: 5px
       &__title
         margin-bottom: 17px
@@ -584,7 +632,8 @@
     &__info
       margin-bottom: 9px
   .map
-    height: 173px
+    &-frame
+      height: 173px
   .newsletter
     padding: 74px 0 83px 0
     &-wrapper
@@ -783,3 +832,32 @@
     &__info
       order: 4
       margin-bottom: 15px
+@media only screen and (min-device-width: 320px) and (max-device-width: 1080px) and (orientation: landscape)
+  .navbar
+    &-bottom
+      &--visible
+        overflow: scroll
+  .modal
+    overflow-y: initial !important
+    &__title
+      margin: 0
+    &__dialog
+      max-height: 100%
+      overflow-y: auto
+      padding: 20px
+    &__button
+      font-size: 18px
+      line-height: 20px
+      margin-bottom: 20px
+  .footer
+    &__container
+      max-width: 698px
+    &-wrapper
+      grid-template-columns: minmax(min-content, 170px) minmax(min-content, 50px) minmax(min-content, 190px) 1fr
+    &__legal
+      margin: 2px 0 0 -10px
+    &__title
+      font-size: 16px
+    &__politics
+      &-text
+        flex-basis: 50%

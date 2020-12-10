@@ -29,6 +29,8 @@
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
+      &:hover
+        font-weight: 700
     &__item
       &--mobile
         &--visible
@@ -61,7 +63,10 @@
     background-color: $primary
     overflow: hidden
     text-overflow: ellipsis
-    white-space: nowrap
+    cursor: pointer
+    /*white-space: nowrap*/
+    &:hover
+      background-color: #ef3215
 .user
   display: flex
   align-items: center
@@ -77,3 +82,5 @@
     line-height: 18px
     color: $text-color
     max-width: 300px
+    &:hover
+      text-decoration: underline
