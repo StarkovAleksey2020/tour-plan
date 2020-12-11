@@ -21,7 +21,8 @@
       gap: 15px
     &-card
       min-width: 30%
-      max-height: 467px
+      /*max-height: 467px*/
+      min-height: 450px
       &__text
         margin-bottom: 9px
       &__description
@@ -30,6 +31,9 @@
     &__input
       &-group
         flex-basis: 100%
+    &__politics
+      &-text
+        flex-basis: 50%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -376,8 +380,8 @@
   .package
     min-height: 1350px
     &-card
-      max-height: 401px
-      /*min-height: 401px*/
+      /*max-height: 385px*/
+      min-height: 376px
       &__badge
         &--narrow
           max-width: 95px
@@ -452,7 +456,7 @@
       font-size: 12px
       line-height: 15px
       &-text
-        flex-basis: 48%
+        flex-basis: 62%
     &__legal
       /*margin: 2px 0 0 32px*/
       margin: 2px 0 0 0
@@ -487,6 +491,7 @@
       grid-template-rows: repeat(5, 1fr)
       margin: 0 auto
     &-card
+      min-height: 397px
       max-width: 350px
       width: 100%
       &__badge
@@ -524,7 +529,8 @@
       margin: 0 auto 5px auto
   .booking
     &-block
-      max-height: 48px
+      /*max-height: 48px*/
+      min-height: 48px
       &__button
         max-width: 122px
   .activities
@@ -566,7 +572,7 @@
       grid-column: 1
       flex-wrap: wrap
       &-text
-        flex-basis: 80%
+        flex-basis: 90%
         text-align: center
   .modal
     &__dialog
