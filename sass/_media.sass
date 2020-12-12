@@ -597,6 +597,13 @@
         min-height: 370px
         margin-bottom: 30px
     &__item
+      &-link
+        &--second
+          display: none
+        &:first-child
+          &:after
+            white-space: pre
+            content: '\A Tel (hotline) Monday - Saturday:\A 52-56-61-38 (08:00 am – 20:00 pm)'
       &-horizontal
         font-size: 11px
     &__politics
@@ -853,13 +860,6 @@
       &-icons
         flex-basis: 48%
     &__item
-      &-link
-        &--second
-          display: none
-        &:first-child
-          &:after
-            white-space: pre
-            content: '\A Tel (hotline) Monday - Saturday:\A 52-56-61-38 (08:00 am – 20:00 pm)'
       &--mb-2
         &:first-child
           margin-bottom: 30px
