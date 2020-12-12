@@ -93,6 +93,10 @@ $(document).ready(function () {
           required: true,
           email: true,
           emailfull: true
+        },
+        phone: {
+          required: true,
+          minlength:18
         }
       },
       errorClass: "invalid",
@@ -103,6 +107,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please specify your phone number",
+          minlength: "Minimum field length 10 characters",
         },
         email: {
           required: "Please specify your email",
