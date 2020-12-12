@@ -4,6 +4,8 @@
   padding-top: 105px
   padding-bottom: 46px
   overflow-x: hidden
+  &__container
+    /*max-width: 95%*/
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
@@ -132,11 +134,20 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
+    &:active
+      outline: none
+    &:focus
+      outline: none
     &-group
       margin-bottom: 15px
       flex-basis: 47%
       position: relative
       display: flex
+  &__button
+    &:active
+      outline: none
+    &:focus
+      outline: none
   &__message
     flex-basis: 100%
     max-height: 123px
@@ -145,6 +156,10 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
+    &:active
+      outline: none
+    &:focus
+      outline: none
   &__info
     max-width: 50%
     font-style: normal
